@@ -16,6 +16,8 @@
               <th scope="col">{{ cafe[0] }}</th>
               {% if "http" in cafe[1][:4] %}
               <th scope="col"> <a href="{{ cafe[1] }}">Map Location</a></th>
+		{% else %}
+		<th scope="col">{{ cafe[1] }}</th>
               {% endif %}
               <th scope="col">{{ cafe[2] }}</th>
               <th scope="col">{{ cafe[3] }}</th>
